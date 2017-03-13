@@ -6,15 +6,20 @@ YOUR STYLES
 }
 
 .city {
-  color: green;
+   color: blue;
+ 
 }
 
 .state {
-  color: blue;
+  color: yellow;
+  }
+
+.forecast figure:nth-child(1) {
+  background: red;
 }
 
-.image img {
-  outline: 5px solid red;
+.forecast figure:nth-child(2) {
+  background: green;
 }
 
 

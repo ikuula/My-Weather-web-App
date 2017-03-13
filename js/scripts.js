@@ -11,16 +11,18 @@ $.simpleWeather({
     // Check for weather
     console.log(weather);
     
-    // Display Weather
+    // Display Current Weather
     $('.temp').text(weather.temp);
     $('.city').text(weather.city);
     $('.state').text(weather.region);
     $('.image img').attr('src', weather.image);
     
-  },
+   // Display Future Weather
+    $('.forecast figure:nth-child(1) img').attr('src', weather.forecast[0].image);
+    $('.forecast figure:nth-child(1) figcaption').text(weather.forecast[0].text + ' baby!');
   
+  },
   error: function(error) {
     console.log('Look outside.');
   }
 });
-
