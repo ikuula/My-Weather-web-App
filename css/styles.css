@@ -42,14 +42,23 @@ HOMESCREEN
 #close {  
 }
 /*SIDR*/
+a {
+	text-decoration: none;
+	color: white;
+}
 ul {
   list-style-type: none;
+}
+li img {
+	width: 80%;
+	margin: 1em 0 2em 0;
 }
 /*Section Containers*/
 section {
   min-height: 50em;
   position: absolute;
   width: 100%;
+	height: 100%;
 }
 #homescreen {
   background: #f2f2f2;
@@ -82,6 +91,8 @@ section {
     width: 16em;
     overflow-x: hidden;
     overflow-y: auto;
+	background: #2a2a2a;
+	box-shadow: inset -20px -30px 100px -20px black;
     }
 
 .left {

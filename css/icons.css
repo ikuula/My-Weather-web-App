@@ -17,10 +17,7 @@ i {
   line-height: 1.0;
   text-transform: none;
 	color: white;
-	text-shadow: 0 0 10px white;
-	margin: 0 auto;
-	text-align: center;
-	width: 100%;
+	text-shadow: 0 0 20px white;
 }
 
 .icon-0:before { content: ":"; }
