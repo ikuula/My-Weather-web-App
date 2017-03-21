@@ -1,6 +1,7 @@
 /********************
 YOUR STYLES
 *******************/
+/*
 .temp {
   color: red;
 }
@@ -21,8 +22,87 @@ YOUR STYLES
 .forecast figure:nth-child(2) {
   background: green;
 }
+*/
+
+// http://codepen.io/manikoth/pen/rxXrvb.css
+//HOMESCREEN
 
 
+//HAMBURGER
+#sidr-show-hide {
+  position: absolute;
+  z-index: 1000;
+  left: 1em;
+  top: 1em;
+  color: white;
+  font-size: 2em;
+}
+#close {
+  
+}
+//SIDR
+ul {
+  list-style-type: none;
+}
+//Section Containers
+section {
+  min-height: 50em;
+  position: absolute;
+  width: 100%;
+}
+#homescreen {
+  background: #f2f2f2;
+  z-index:1;
+}
+#one {
+  background: red;
+}
+#two {
+  background: yellow;
+}
+#three {
+  background: blue;  
+}
+#four {
+  background: magenta;
+}
+
+:target {
+  z-index: 1;
+}
+
+// Minimal initial style of sidebar
+
+
+$sidebar-width: 16em;
+$sidebar-width-neg: -16em;
+
+.sidr {
+    display: block;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    z-index: 999999;
+    width: $sidebar-width;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    &.left {
+        left: $sidebar-width-neg;
+        right: auto;
+    }
+}
+
+//initial section styling
+h1 {
+  text-align: center;
+}
+.geo {
+  background: white;
+  width: 100%;
+  padding: 1em;
+  text-align: center;
+}
 
 /********************
 MEDIA QUERIES
