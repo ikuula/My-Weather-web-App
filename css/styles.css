@@ -73,13 +73,6 @@ section {
 }
 
 /*Minimal initial style of sidebar*/
-
-/*
-
-$sidebar-width: 6em;
-$sidebar-width-neg: -6em;
-*/
-
 .sidr {
     display: block;
     position: fixed;
@@ -95,6 +88,7 @@ $sidebar-width-neg: -6em;
         left: -16em;
         right: auto;
 }
+
 /*initial section styling*/
 h1 {
   text-align: center;
@@ -112,32 +106,20 @@ MEDIA QUERIES
 /* Mobile: 320px = 20em */
 @media screen and (min-width: 20em) { 
 
-  /* Diagnostic Styling. Delete When Done. */
-  body:before {
-       background: yellow;
-       content: "Mobile Size";
-  }
+ 
   
 }
 
 /* Tablet:  768px = 160em */
 @media screen and (min-width: 48em)  {
 
-  /* Diagnostic Styling. Delete When Done. */
-  body:before {
-       background: yellow;
-       content: "Tablet Size";
-  }
+ 
 
 }
 
 /* Desktop: 1280px = 80em */
 @media screen and (min-width: 80em) { 
   
-  /* Diagnostic Styling. Delete When Done. */
-  body:before {
-       background: yellow;
-       content: "Desktop Size";
-  }
+
 
 }

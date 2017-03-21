@@ -54,7 +54,11 @@ var getWeather = function(location) {
       $('.temp').text(weather.temp);
       $('.city').text(weather.city);
       $('img').attr('src', weather.image);
-        
+      
+		// Change Icon w/ Condition code
+      var iconCode = 'icon-' + weather.code;
+      $('i').attr('class', iconCode );
+		
     },
     error: function(error) {
       // Show if weather cannot be retreived
