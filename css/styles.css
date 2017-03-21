@@ -24,11 +24,13 @@ YOUR STYLES
 }
 */
 
-// http://codepen.io/manikoth/pen/rxXrvb.css
-//HOMESCREEN
+/*
+http://codepen.io/manikoth/pen/rxXrvb.css
+HOMESCREEN
+*/
 
 
-//HAMBURGER
+/*HAMBURGER*/
 #sidr-show-hide {
   position: absolute;
   z-index: 1000;
@@ -37,14 +39,13 @@ YOUR STYLES
   color: white;
   font-size: 2em;
 }
-#close {
-  
+#close {  
 }
-//SIDR
+/*SIDR*/
 ul {
   list-style-type: none;
 }
-//Section Containers
+/*Section Containers*/
 section {
   min-height: 50em;
   position: absolute;
@@ -71,11 +72,13 @@ section {
   z-index: 1;
 }
 
-// Minimal initial style of sidebar
+/*Minimal initial style of sidebar*/
 
+/*
 
-$sidebar-width: 16em;
-$sidebar-width-neg: -16em;
+$sidebar-width: 6em;
+$sidebar-width-neg: -6em;
+*/
 
 .sidr {
     display: block;
@@ -83,17 +86,16 @@ $sidebar-width-neg: -16em;
     top: 0;
     height: 100%;
     z-index: 999999;
-    width: $sidebar-width;
+    width: 16em;
     overflow-x: hidden;
     overflow-y: auto;
-
-    &.left {
-        left: $sidebar-width-neg;
-        right: auto;
     }
-}
 
-//initial section styling
+.left {
+        left: -16em;
+        right: auto;
+}
+/*initial section styling*/
 h1 {
   text-align: center;
 }
