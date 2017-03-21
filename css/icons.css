@@ -9,16 +9,7 @@
     font-style: normal;
 }
 
-i {
-  font-family: weather;
-  font-size: 20em;
-  font-weight: normal;
-  font-style: normal;
-  line-height: 1.0;
-  text-transform: none;
-	color: white;
-	text-shadow: 0 0 20px white;
-}
+
 
 .icon-0:before { content: ":"; }
 .icon-1:before { content: "p"; }

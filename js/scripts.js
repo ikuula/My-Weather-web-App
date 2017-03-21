@@ -76,6 +76,7 @@ $.simpleWeather({
       console.log(weather);
       
       // Display Data
+	  $('#spokane .currently').text(weather.currently);
       $('#spokane .temp').text(weather.temp);
       $('#spokane .city').text(weather.city);
       $('#spokane img').attr('src', weather.image);
@@ -101,6 +102,7 @@ $.simpleWeather({
       console.log(weather);
       
       // Display Data
+		$('#seattle .currently').text(weather.currently);
       $('#seattle .temp').text(weather.temp);
       $('#seattle .city').text(weather.city);
       $('#seattle img').attr('src', weather.image);
@@ -126,7 +128,8 @@ $.simpleWeather({
       console.log(weather);
       
       // Display Data
-      $('#portland .temp').text(weather.temp);
+      $('#portland .currently').text(weather.currently);
+		$('#portland .temp').text(weather.temp);
       $('#portland .city').text(weather.city);
       $('#portland img').attr('src', weather.image);
       
