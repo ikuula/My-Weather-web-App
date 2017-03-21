@@ -28,7 +28,9 @@ YOUR STYLES
 http://codepen.io/manikoth/pen/rxXrvb.css
 HOMESCREEN
 */
-
+body {
+	font-family: 'Bitter', serif;
+}
 
 /*HAMBURGER*/
 #sidr-show-hide {
@@ -38,21 +40,49 @@ HOMESCREEN
   top: 1em;
   color: white;
   font-size: 2em;
+/*
+	padding: 0 5px;
+	border: solid white;
+	border-radius: 100px;
+*/
 }
-#close {  
+#close { 
+	float: right;
+	font-size: 2em;
+	margin: 1em;
+	padding: 0px 8px;
+	border: solid white;
+	border-radius: 100px;
+/*	text-shadow: 0 0 5px white;*/
 }
 /*SIDR*/
 a {
 	text-decoration: none;
 	color: white;
 }
-ul {
+.places {
   list-style-type: none;
+	margin: 0 0 0 2em;
+	padding: 0;
+	
 }
-li img {
-	width: 80%;
-	margin: 1em 0 2em 0;
+li {
+	padding: .5em 0;
+	border-top: solid 1px white;
 }
+li:nth-child(1) {
+	border-top: none;
+	margin: 2em 2em 2em 0;
+}
+#logo {
+	width: 100%;
+	padding: 0;
+	margin-top: 2em;
+}
+li:nth-child(2) {
+	margin-bottom: 4em;
+}
+
 /*Section Containers*/
 section {
   min-height: 50em;
@@ -74,8 +104,9 @@ section {
   background: blue;  
 }
 #four {
-  background: magenta;
+  background: green;
 }
+
 
 :target {
   z-index: 1;
