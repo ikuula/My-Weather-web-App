@@ -39,32 +39,108 @@ $('.geo').click( function() {
    
 });
 
-// Get Weather
-var getWeather = function(location) {
-  
-    $.simpleWeather({
-    location: location,
+//// Get Weather - Location
+//var getWeather = function(location) {
+//  
+//    $.simpleWeather({
+//    location: location,
+//    unit: 'f',
+//    success: function(weather) {
+//      
+//      // Entire weather object
+//      console.log(weather);
+//      
+//      // Display Data
+//      $('#currentLocation .temp').text(weather.temp);
+//      $('#currentLocation .city').text(weather.city);
+//      $('#currentLocation img').attr('src', weather.image);
+//      
+//		// Change Icon w/ Condition code
+//      var iconCode = 'icon-' + weather.code;
+//      $('i').attr('class', iconCode );
+//		
+//    },
+//    error: function(error) {
+//      // Show if weather cannot be retreived
+//      console.log('Look Outside.');
+//    }
+//  
+//  }); 
+	
+	// Spokane
+$.simpleWeather({
+    location: 99203,
     unit: 'f',
     success: function(weather) {
-      
       // Entire weather object
       console.log(weather);
       
       // Display Data
-      $('.temp').text(weather.temp);
-      $('.city').text(weather.city);
-      $('img').attr('src', weather.image);
+      $('#spokane .temp').text(weather.temp);
+      $('#spokane .city').text(weather.city);
+      $('#spokane img').attr('src', weather.image);
       
 		// Change Icon w/ Condition code
       var iconCode = 'icon-' + weather.code;
-      $('i').attr('class', iconCode );
+      $('#spokane i').attr('class', iconCode );
 		
     },
     error: function(error) {
       // Show if weather cannot be retreived
-      console.log('Look Outside.');
+      console.log('Look outside.');
     }
   
   });
+
+// Seattle
+$.simpleWeather({
+    location: 98105,
+    unit: 'f',
+    success: function(weather) {
+      // Entire weather object
+      console.log(weather);
+      
+      // Display Data
+      $('#seattle .temp').text(weather.temp);
+      $('#seattle .city').text(weather.city);
+      $('#seattle img').attr('src', weather.image);
+      
+		// Change Icon w/ Condition code
+      var iconCode = 'icon-' + weather.code;
+      $('#seattle i').attr('class', iconCode );
+		
+    },
+    error: function(error) {
+      // Show if weather cannot be retreived
+      console.log('Look outside.');
+    }
   
-};
+  });
+
+// Portland
+$.simpleWeather({
+    location: 97214,
+    unit: 'f',
+    success: function(weather) {
+      // Entire weather object
+      console.log(weather);
+      
+      // Display Data
+      $('#portland .temp').text(weather.temp);
+      $('#portland .city').text(weather.city);
+      $('#portland img').attr('src', weather.image);
+      
+		// Change Icon w/ Condition code
+      var iconCode = 'icon-' + weather.code;
+      $('#portland i').attr('class', iconCode );
+		
+    },
+    error: function(error) {
+      // Show if weather cannot be retreived
+      console.log('Look outside.');
+    }
+  
+  });
+	
+
+
