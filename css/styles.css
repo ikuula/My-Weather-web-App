@@ -60,7 +60,7 @@ body {
 	float: right;
 	font-size: 2em;
 	margin: 1em;
-	padding: 0px 8px;
+	padding: 0px 6px;
 	border: solid white;
 	border-radius: 100px;
 /*	text-shadow: 0 0 5px white;*/
@@ -154,11 +154,13 @@ h3, h1 {
 	font-size: 4em;
 	line-height: 1;
 }
+#city {
+	padding-bottom: 0;
+}
 .today {
 	border: none;
 	padding-top: 0;
 }
-
 
 section i:first-child {
   font-family: weather;
@@ -185,7 +187,6 @@ i {
   line-height: 1;
   text-transform: none;
 	color: white;
-	text-shadow: 0 0 20px white;
 /*	border-bottom: solid 4px;*/
 	margin-top: 4px;
 }
@@ -195,12 +196,17 @@ figure {
 	flex-direction: row;
 	justify-content:space-between;
 	margin: 0;	
+	border-bottom: dotted 4px white;
+}
+figure:last-child {
+	border-bottom: none;
 }
 .forecast {
 	margin: 0 32px 0 0;
-	padding: 0 0 0 32px;
+	padding: 1em 0 1em 32px;
 	border-top: solid 4px white;
 }
+
 /*-----button--------*/
 .geo {
   background: #2a2a2a;
