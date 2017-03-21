@@ -30,6 +30,7 @@ HOMESCREEN
 */
 body {
 	font-family: 'Bitter', serif;
+	line-height: 1;
 	color: white;
 	margin: 0;
 	padding: 0;
@@ -141,27 +142,25 @@ section {
 
 /*initial section styling*/
 .info {
-	margin: 8.8em 0 0 0;
+	margin: 11em 0 0 0;
 } 
-h1 {
+h3, h1 {
 	text-align: right;
-	border-bottom: solid 4px white;
-	padding: 8px 0;
+	border-top: solid 4px white;
+	padding:16px 0;
 	margin: 0 32px 0 0;
 }
 .temp {
 	font-size: 4em;
 	line-height: 1;
 }
-
-h3 {
-	text-align: right;
-	border-bottom: solid 4px white;
-	padding: 16px 0;
-	margin: 0 32px 0 0;
+.today {
+	border: none;
+	padding-top: 0;
 }
 
-i {
+
+section i:first-child {
   font-family: weather;
   font-size:10em;
   font-weight: normal;
@@ -170,11 +169,37 @@ i {
   text-transform: none;
 	color: white;
 	text-shadow: 0 0 20px white;
-	border-bottom: solid 4px;
+/*	border-bottom: solid 4px;*/
 /*	padding-bottom: 0;*/
 	padding-left:100%; 
 	position: absolute;
 	right:32px;
+	margin: 0;
+}
+/*-----forecast------*/
+i {
+  font-family: weather;
+  font-size:3em;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+  text-transform: none;
+	color: white;
+	text-shadow: 0 0 20px white;
+/*	border-bottom: solid 4px;*/
+	margin-top: 4px;
+}
+
+figure {
+	display: flex;
+	flex-direction: row;
+	justify-content:space-between;
+	margin: 0;	
+}
+.forecast {
+	margin: 0 32px 0 0;
+	padding: 0 0 0 32px;
+	border-top: solid 4px white;
 }
 /*-----button--------*/
 .geo {
