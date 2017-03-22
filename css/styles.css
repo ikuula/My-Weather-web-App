@@ -81,11 +81,11 @@ a {
 }
 li a {
 	width: 100%;
-	padding: .5em 55% .5em 0;
+	padding: .5em .5em .5em 0;
 /*	margin-right: 100%;*/
 }
 
-li:active a {
+li a:active  {
 	background: white;
 	color: black;
 }
@@ -97,7 +97,7 @@ li:active a {
 	
 }
 li {
-	width: 150%;
+	width: 100%;
 	padding: .5em 0;
 	border-top: solid 4px white;
 }
@@ -229,7 +229,10 @@ color: white;
 	border-top: solid 4px white;
 	box-shadow: inset 0px -10px 30px -10px black;
 }
-
+.geo:active {
+	background: white;
+	color: black;
+}
 /********conditional BG**********/
 .sad {
 background: #4f637b;  
