@@ -95,27 +95,11 @@ li:nth-child(2) {
 
 /*Section Containers*/
 section {
-  min-height: 50em;
+  min-height: 100%;
   position: absolute;
   width: 100%;
+  background: black;
 }
-#homescreen {
-  background: #f2f2f2;
-  z-index:1;
-}
-#currentLocation {
-  background: red;
-}
-#spokane {
-  background: orange;
-}
-#seattle {
-  background: blue;  
-}
-#portland {
-  background: green;
-}
-
 
 :target {
   z-index: 1;
@@ -131,7 +115,7 @@ section {
     width: 16em;
     overflow-x: hidden;
     overflow-y: auto;
-	background: #2a2a2a;
+	background: #2c2c2c;
 	box-shadow: inset -20px -30px 100px -20px black;
     }
 
@@ -203,19 +187,56 @@ figure:last-child {
 }
 .forecast {
 	margin: 0 32px 0 0;
-	padding: 1em 0 1em 32px;
+	padding: 1em 0 4em 32px;
 	border-top: solid 4px white;
 }
 
 /*-----button--------*/
 .geo {
+  position: fixed;
+  bottom: 0;
+	z-index: 2;
   background: #2a2a2a;
   width: 100%;
   padding: 1em;
   text-align: center;
+	font-family: 'Bitter', serif;
 color: white;
 	border: none;
+	border-top: solid 4px white;
+	box-shadow: inset 0px -10px 30px -10px black;
 }
+
+/********conditional BG**********/
+.sad {
+background: #4f637b;  
+background: -webkit-linear-gradient(to left, #95999b , #F4f637b); 
+background: linear-gradient(to left, #95999b , #4f637b); 
+}  
+.happy {
+background: ##a1d4f0; 
+background: -webkit-linear-gradient(to left, #ffb100 , ##a1d4f0);
+background: linear-gradient(to left, #ffb100 , #a1d4f0); 
+}
+
+.wet {
+background: #898b8d; 
+background: -webkit-linear-gradient(to left, #138bbf , #898b8d); 
+background: linear-gradient(to left, #138bbf , #898b8d); 
+}
+
+.bad {
+background: #2a2a2a; 
+background: -webkit-linear-gradient(to left, #2a2a2a , #cccccc); 
+background: linear-gradient(to left, #2a2a2a , #cccccc); 
+}
+
+
+
+
+
+
+
 
 /********************
 MEDIA QUERIES
