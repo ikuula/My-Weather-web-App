@@ -2,11 +2,21 @@
 // https://cdnjs.cloudflare.com/ajax/libs/sidr/2.2.1/jquery.sidr.min.js
 
 // call Sidr Plugin. Toggle by Default
-$('#sidr-show-hide').sidr();
-
+$('#sidr-show-hide').sidr({
+	speed:500
+});
+	
 // Close from inside
 $('#close').sidr({
-  method: 'close'
+  method: 'toggle',
+	timimg:'ease-out',
+	speed:500
+});
+
+$('section').sidr({
+	method: 'close',
+	timimg:'ease-out',
+	speed:500
 });
 
 // Get and store Geo Location lat/long coordinates
